@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void final (int n){
+void final (int n){//serveix quan el while principal s'acaba i imprimeix les ultimes ***
     int k=n-1;
     int m=0;
      while (k>m){
@@ -19,18 +19,18 @@ int main (){
     cin>>n;
         while (n>j){
             m=1;
-            i=n-(1*j);
+            i=n-(1*j);//per poder començar amb una menys i va disminuint
              while (i!=0){
-                cout<<'+';
+                cout<<'+';//imprimeix les +
                 i=i-1;
-                if(i==0){
+                if(i==0){//al final de la sequencia posa una /
                     cout <<'/';
                 }
              }
             if(j>1){
                 while (k>m){
-                    cout<<'*';
-                    m++;
+                    cout<<'*';//imprimeix las *
+                    m++;//m augmenta fins que el while principal s acaba
             }
          }
         cout<<endl;
